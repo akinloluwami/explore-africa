@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Poppins;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  background-image: url(https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1566&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+  background-size: cover;
+}
+.container {
+  height: 95%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      img {
+        width: 60px;
+      }
+    }
+    .navbar {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      width: 30%;
+      height: 10vh;
+      align-items: center;
+      a {
+        color: #fff;
+        font-weight: 150;
+        &:link {
+          text-decoration: none;
+        }
+      }
+    }
+    .fas {
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.452);
+      padding: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .content-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .lines {
+      display: flex;
+      justify-content: space-between;
+      height: 30vh;
+      flex-direction: column;
+      .line {
+        height: 50px;
+        width: 2px;
+        background-color: rgba(255, 255, 255, 0.397);
+      }
+    }
+    .socials {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 15vh;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    .text {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      color: #fff;
+      p {
+        font-size: 25px;
+      }
+      h1 {
+        font-size: 120px;
+      }
+    }
+  }
+  .locations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .location {
+      display: flex;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.363);
+      padding: 5px 50px;
+      border-radius: 10px;
+      color: #fff;
+      .text {
+        padding: 10px;
+      }
+    }
+  }
+}
